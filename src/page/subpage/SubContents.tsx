@@ -10,9 +10,14 @@ import List from './bbs/List';
 import Service from './service/Service';
 import ProductList from './product/ProductList';
 
+import { MyFeelterQ } from '../../types/common';
 
+type SubContentsProps = {
+  id: string;
+  myfilter?: MyFeelterQ; // optional로 받도록 지정
+};
 
-const SubContents: React.FC<{ id: string }>= ({id}) => {
+const SubContents: React.FC<SubContentsProps> = ({ id, myfilter }) => {
     const { tab = "" } = useParams<{ tab?: string }>();
 
     const tabToTransIdMap: Record<string, string> = {
@@ -24,7 +29,9 @@ const SubContents: React.FC<{ id: string }>= ({id}) => {
     const transId = tabToTransIdMap[tab] ?? id;
 
     const ComponentMap: Record<string, JSX.Element> = {
-      tripRoute: <TripRoute tab={tab}/>,
+      tripRoute: tab === "myFeelter" 
+      ? <TripRoute tab={tab} myfeelter={myfilter} />
+      : <TripRoute tab={tab} />,
       tripTalk: <TripTalk />,
       service: <Service />,
       bbs: <List />,
@@ -39,7 +46,7 @@ const SubContents: React.FC<{ id: string }>= ({id}) => {
     return (
       <SubLayout id={transId} tab={tab}>
         <section id={id}>
-          {ComponentMap[id] ?? <TripRoute tab={tab}/>}
+          { ComponentMap[id] ?? <TripRoute tab={tab}/> }
         </section>
       </SubLayout>
     );

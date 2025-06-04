@@ -13,7 +13,7 @@ export interface TabData {
 
 export interface Answer {
   label: string;
-  value: string;
+  value: string | number;
   src: string;
 }
 
@@ -23,9 +23,14 @@ export interface QuestionItem {
   className: string;
 }
 
-export interface MyFeelterQ {
-  [key: string]: QuestionItem; 
-}  
+
+export interface FeelterQuestion {
+  question: string;
+  answers: Answer[];
+  className: string;
+}
+
+export type MyFeelterQ = FeelterQuestion[];
 
 export interface AllData {
   myfeelterQ: MyFeelterQ;

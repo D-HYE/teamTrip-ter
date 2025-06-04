@@ -1,48 +1,48 @@
 {
-"myfeelterQ": {
-    "q1": {
+"myfeelterQ": [
+    {
       "question": "어디로 떠나고 싶은가요?",
       "answers": [
         {
           "label": "국내 여행",
-          "value": "a",
+          "value": "domestic",
           "src": "https://d-hye.github.io/source/img/myfeelterimage/1-1.jpg"
         },
         {
           "label": "해외 여행",
-          "value": "b",
+          "value": "overseas",
           "src": "https://d-hye.github.io/source/img/myfeelterimage/1-2.jpg"
         }
       ],
       "className": "table2"
     },
-    "q2": {
+    {
       "question": "여행 기간은 어떻게 되시나요?",
       "answers": [
         {
           "label": "2일 이내",
-          "value": "a",
+          "value": "1",
           "src": "https://d-hye.github.io/source/img/myfeelterimage/2-1.jpg"
         },
         {
           "label": "7일 이내",
-          "value": "b",
+          "value": "5",
           "src": "https://d-hye.github.io/source/img/myfeelterimage/2-2.jpg"
         },
         {
           "label": "8일 이상",
-          "value": "c",
+          "value": "8",
           "src": "https://d-hye.github.io/source/img/myfeelterimage/2-3.jpg"
         },
         {
           "label": "한 달 살기 등 장기 여행",
-          "value": "d",
+          "value": "30",
           "src": "https://d-hye.github.io/source/img/myfeelterimage/2-4.jpg"
         }
       ],
       "className": "table2"
     },
-    "q3": {
+    {
       "question": "최대 예산 범위를 알려주세요",
       "answers": [
         {
@@ -68,7 +68,7 @@
       ],
       "className": "table2"
     },
-    "q4": {
+    {
       "question": "나의 여행 스타일은?",
       "answers": [
         {
@@ -84,7 +84,7 @@
       ],
       "className": "table2"
     },
-    "q5": {
+     {
       "question": "여행에서 가장 선호하는 숙소 유형은?",
       "answers": [
         {
@@ -110,7 +110,7 @@
       ],
       "className": "table2"
     },
-    "q6": {
+    {
       "question": "숙소를 선택하는 기준은?",
       "answers": [
         {
@@ -136,7 +136,7 @@
       ],
       "className": "table2"
     },
-    "q7": {
+   {
       "question": "여행 중 이동 수단으로 선호하는 것은?",
       "answers": [
         {
@@ -162,7 +162,7 @@
       ],
       "className": "table2"
     },
-    "q8": {
+   {
       "question": "여행 중 가장 즐기고 싶은 활동은?",
       "answers": [
         {
@@ -193,7 +193,7 @@
       ],
       "className": "table3"
     },
-    "q9": {
+    {
       "question": "여행지를 선택하는 기준 1순위는?",
       "answers": [
         {
@@ -219,7 +219,7 @@
       ],
       "className": "table2"
     },
-    "q10": {
+    {
       "question": "추구하는 여행 스타일은?",
       "answers": [
         {
@@ -245,7 +245,7 @@
       ],
       "className": "table2"
     },
-    "q11": {
+    {
       "question": "여행 중 가장 중요한 정보는?",
       "answers": [
         {
@@ -271,7 +271,77 @@
       ],
       "className": "table2"
     }
-  },
+  ],
+"myfeelterResult": [
+    {
+      "id": "domestic-budget",
+      "type": "국내",
+      "title": "강원도 여행",
+      "image": "https://d-hye.github.io/source/img/myfeelterresult/gangwon.jpg",
+      "conditions": {
+        "location": "국내",
+        "durationScore": { "max": 5 },
+        "budgetScore": { "max": 10 }
+      }
+    },
+    {
+      "id": "domestic-premium",
+      "type": "국내",
+      "title": "제주도 여행",
+      "image": "https://d-hye.github.io/source/img/myfeelterresult/jeju.jpg",
+      "conditions": {
+        "location": "국내",
+        "durationScore": { "min": 10 },
+        "budgetScore": { "min": 10 }
+      }
+    },
+    {
+      "id": "overseas-budget-taiwan",
+      "type": "해외",
+      "title": "대만 여행",
+      "image": "https://d-hye.github.io/source/img/myfeelterresult/taiwan.jpg",
+      "conditions": {
+        "location": "해외",
+        "durationScore": { "max": 5 },
+        "budgetScore": { "max": 10 },
+        "tripStyle": ["도시 탐방", "시장 투어"]
+      }
+    },
+    {
+      "id": "overseas-budget-okinawa",
+      "type": "해외",
+      "title": "오키나와 여행",
+      "image": "https://d-hye.github.io/source/img/myfeelterresult/okinawa.jpg",
+      "conditions": {
+        "location": "해외",
+        "durationScore": { "max": 5 },
+        "budgetScore": { "max": 10 },
+        "tripStyle": ["자연", "휴양", "리조트"]
+      }
+    },
+    {
+      "id": "overseas-premium",
+      "type": "해외",
+      "title": "런던 해리포터 투어",
+      "image": "https://d-hye.github.io/source/img/myfeelterresult/london.jpg",
+      "conditions": {
+        "location": "해외",
+        "budgetScore": { "min": 10 },
+        "tripStyle": ["문화", "예술", "영화 관련"]
+      }
+    },
+    {
+      "id": "overseas-long",
+      "type": "해외",
+      "title": "치앙마이 한달살기",
+      "image": "https://d-hye.github.io/source/img/myfeelterresult/chiangmai.jpg",
+      "conditions": {
+        "location": "해외",
+        "durationScore": { "min": 20 },
+        "tripStyle": ["로컬 체험", "장기 여행", "힐링"]
+      }
+    }
+  ],  
 "mainTabMenu": [
     {
       "tabid": "0",

@@ -7,7 +7,7 @@ import User from "../page/subpage/user/User";
 
 import allData from '../data/allData.json'
 
-import {AllData} from '../types/common'
+import {AllData, MyFeelterQ} from '../types/common'
 
 
 const Contents:React.FC = () => {
@@ -16,7 +16,7 @@ const Contents:React.FC = () => {
            <Route path="/" element={<Index id="mainPage" allData={allData as AllData}/>} />
            <Route path="/user/:page?" element={<User />} />
            <Route path="/bbs/:tab?" element={<SubContents id="bbs" />} />
-           <Route path="/tripRoute/:tab?" element={<SubContents id="tripRoute" />} />
+           <Route path="/tripRoute/:tab?" element={<SubContents id="tripRoute" myfilter={allData.myfeelterQ as MyFeelterQ }  />} />
            <Route path="/tripTalk/:tab?" element={<SubContents id="tripTalk" />} />
            <Route path="/tripterEvent/:tab?" element={<SubContents id="tripterEvent" />} />
 

@@ -62,7 +62,7 @@ const Header: React.FC<{ id: string }> = ({ id }) => {
                     alt="더보기"
                   />
                 </span>
-                <ul className={`${hyo.hide_menu} ${isDropdown ? "" : "hidden"} w-20 h-20 absolute bg-white top-5 left-[-0.9375rem] z-[200] shadow-[0_0.125rem_0.4375rem_rgba(0,0,0,0.5)]`} >
+                <ul className={`${hyo.hide_menu} ${isDropdown ? "" : "hidden"} w-20 h-12 absolute bg-white top-5 left-[-0.9375rem] z-[200] shadow-[0_0.125rem_0.4375rem_rgba(0,0,0,0.5)]`} >
                   <li className={`mt-[0.4rem] flex justify-center`}>
                     <Link to="/service/faq">FAQ</Link>
                   </li>

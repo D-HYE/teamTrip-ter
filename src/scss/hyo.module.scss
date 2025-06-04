@@ -39,6 +39,7 @@
 }
 
 .table2{
+    padding: 0 1.25rem;
     div{
         width: calc(50% - 0.625rem);
         height: 12.5rem;
@@ -84,4 +85,108 @@ label{
         height: auto;
     }
 }  
+}
+
+// 마이필터 결과 페이지
+.img_wrap{
+    background: url(https://d-hye.github.io/source/img/main_img/md_slide3.jpg) no-repeat center/cover;
+    &::before{
+       content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(255,255,255,.3);
+    }
+}
+.before_login{
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-image: linear-gradient(180deg, #ffffff4d, #fff 100%);
+
+
+    }
+}
+
+//계획짜기-폼
+.formArea{
+    &::before {
+        content: "";
+        display: block;
+        height: 1.875rem;
+        background-color: var(--trip-blue);
+        width: 100%;
+        border-top-left-radius: 1.875rem;
+        border-top-right-radius: 1.875rem;
+        top: 0;
+        left: 0;
+        }
+        .icon_search{
+            width: 24px; height: 24px;
+            background: url(https://d-hye.github.io/source/img/icon/search-02.svg)no-repeat center/contain;
+            text-indent: -10000px;
+        }         
+    }
+.calendarButton{
+    &::before{
+        content: "";
+        width: 24px;
+        height: 24px;
+        background: url("https://raw.githubusercontent.com/D-HYE/trip-ter/b0e3cbc04e805917e3f201d0b1a1c9283b87d8d4/img/icon/calendar.svg") no-repeat center/contain;
+        text-indent: -10000px;
+        margin-right: 8px;
+
+    }
+}
+
+.confirmArea{
+    &::before {
+        content: "";
+        display: block;
+        height: 1.875rem;
+        background-color: var(--trip-blue);
+        width: 100%;
+        border-top-left-radius: 1.875rem;
+        border-top-right-radius: 1.875rem;
+        top: 0;
+        left: 0;
+        }
+}
+.Btn_disabled{
+    background-color: var(--trip-skyblue);
+    color: var(--trip-gray3);
+    cursor: default;
+}
+
+//탭 메뉴
+.tab_content li{
+    transition: all 0.3s ease;
+    .tripcar_tab{
+        border: 0.0625rem solid #FF7F50;
+        span{
+            color: #FF7F50;
+        }
+    }
+    &.tabClick{
+        height: 50px;
+        background-color: var(--trip-blue);
+
+        span{
+            color: var(--trip-yellow);
+        }
+    }
+
+    &.tripcar_tab.tabClick{
+        background-color:#3EB489;
+        border: 0.0625rem solid #3EB489;
+        span{
+            color: var(--trip-white);
+        }
+    }
 }

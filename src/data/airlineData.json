@@ -1,0 +1,115 @@
+{
+    "airplane": {
+      "airways": {
+        "AS": {
+          "name": "에어서울",
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_airseoul.png"
+        },
+        "OZ": {
+          "name": "아시아나항공",
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_asiana.png"
+        },
+        "JN": {
+          "name": "진에어",
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_jinair.png"
+        },
+        "ZE": {
+          "name": "이스타항공",
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_estar.png"
+        },
+        "KE": {
+          "name": "대한항공",
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_koreanair.png"
+        },
+        "7C": {
+          "name": "제주항공",
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_jeju.png"
+        },
+        "TW": {
+          "name": "티웨이항공",
+          "logo": "https://d-hye.github.io/source/img/sub_img/planmaker/airplane_tway.png"
+        }
+      },
+      "flightproduct": [
+        {
+          "productId": "1001",
+          "go": {
+            "depTime": "오전 08:30",
+            "arrTime": "오전 11:00",
+            "price": "350,000"
+          },
+          "back": {
+            "depTime": "오후 06:00",
+            "arrTime": "오후 08:30",
+            "price": "360,000"
+          },
+          "created": "2025-05-01",
+          "updated": "2025-05-10"
+        },
+        {
+          "productId": "1002",
+          "go": {
+            "depTime": "오전 10:00",
+            "arrTime": "오후 12:30",
+            "price": "120,000"
+          },
+          "back": {
+            "depTime": "오후 04:30",
+            "arrTime": "오후 07:00",
+            "price": "230,000"
+          },
+          "created": "2025-05-01",
+          "updated": "2025-05-10"
+        },
+        {
+          "productId": "1003",
+          "go": {
+            "depTime": "오후 01:00",
+            "arrTime": "오후 05:30",
+            "price": "400,000"
+          },
+          "back": {
+            "depTime": "오후 10:00",
+            "arrTime": "오전 05:00",
+            "price": "410,000"
+          },
+          "created": "2025-05-02",
+          "updated": "2025-05-11"
+        },
+        {
+          "productId": "1004",
+          "go": {
+            "depTime": "오전 11:00",
+            "arrTime": "오후 06:00",
+            "price": "880,000"
+          },
+          "back": {
+            "depTime": "오전 10:30",
+            "arrTime": "오전 06:00",
+            "price": "890,000"
+          },
+          "created": "2025-05-01",
+          "updated": "2025-05-12"
+        }
+      ],
+      "airports": {
+        "김포": { "iata": "GMP" },
+        "인천": { "iata": "ICN" },
+        "제주": { "iata": "CJU" },
+        "도쿄": { "iata": "NRT" },
+        "오사카": { "iata": "KIX" },
+        "방콕": { "iata": "BKK" },
+        "후쿠오카": { "iata": "FUK" },
+        "다낭": { "iata": "DAD" },
+        "파리": { "iata": "CDG" },
+        "호치민": { "iata": "SGN" },
+        "튀르키예": { "iata": "IST" },
+        "뮌헨": { "iata": "MUC" },
+        "상하이": { "iata": "PVG" },
+        "LA": { "iata": "LAX" },
+        "베이징": { "iata": "PEK" },
+        "취리히": { "iata": "ZRH" }
+      }
+    }
+  }
+  
